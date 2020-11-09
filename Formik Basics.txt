@@ -1,0 +1,23 @@
+// Formik:::::
+
+What??
+Formik is a small library that helps you deal with forms in React.
+
+Developers used formik??
+i) Handle form data
+ii) Validation
+iii) Visual feedback with error messages
+iv) Form submission
+
+why??
+i) Managing form data
+ii) Form submission
+iii) Form validation and displaying error messages
+
+Formik helps you deal with forms in a scalable, performant and esay way.
+
+Prerequisites to learn Formik??
+i) HTML
+ii) CSS
+iii) JavaScript + ES6
+iv) React (Hooks)
