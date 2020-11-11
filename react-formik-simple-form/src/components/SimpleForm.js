@@ -14,6 +14,9 @@ function SimpleForm() {
         }
     }) 
 
+
+    console.log("Form Value",formik.values);
+
     return (
         <div>
             <form>
