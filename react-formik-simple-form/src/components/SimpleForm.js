@@ -1,6 +1,10 @@
-import React from 'react'
+import React from 'react';
+import {useFormik} from 'formik';
 
 function SimpleForm() {
+
+    const formik = useFormik({})
+
     return (
         <div>
             <form>
