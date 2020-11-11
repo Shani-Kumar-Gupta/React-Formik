@@ -6,20 +6,27 @@ function SimpleForm() {
     // called useFormik hook passing in an object and return object
     // Step 1: pass initial value of form field
     // Step 2: add onChange and value prop for each of the form field
+
+    // Handle form submission:
+    //Step 1: Specify the onSubmit handler to form element
+    //Step 2: Specify onSubmit property 
     const formik = useFormik({
         initialValues : {
             name : '',
             email: '',
             channel : ''
+        },
+        onSubmit : values => {
+            console.log("Form Data",values);
         }
     }) 
 
 
-    console.log("Form Value",formik.values);
+    //console.log("Form Value",formik.values);
 
     return (
         <div>
-            <form>
+            <form onSubmit={formik.handleSubmit}>
                 <label htmlFor='name'>Name:</label>
                 <input type='text' id='name' name='name' onChange={formik.handleChange} value={formik.values.name}/>
 
@@ -29,7 +36,7 @@ function SimpleForm() {
                 <label htmlFor='channel'>Channel:</label>
                 <input type='text' id='channel' name='channel' onChange={formik.handleChange} value={formik.values.channel}/>
 
-                <button>Submit</button>
+                <button type="submit">Submit</button>
             </form>
         </div>
     )
